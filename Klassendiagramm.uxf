@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>250</x>
+      <y>860</y>
+      <w>210</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>AudioOutput
+--
+- deviceName: string
++ start()
++ stop()
++ write(buffer)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>250</x>
+      <y>460</y>
+      <w>210</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>Track
+--
+- id: string
+- titel: string
+- artist: string
+- album: string
+- duriation: int
+- sorce: AudioFile
++ getMetadata()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>250</x>
+      <y>670</y>
+      <w>210</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>AudioFile
+--
+- path: string
+- format: string
+- bitrate: int
++ open()
++ readChunk()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>340</x>
+      <y>600</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>340</x>
+      <y>800</y>
+      <w>30</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>250</x>
+      <y>300</y>
+      <w>210</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>UIController
+--
+- viewState: string
++ onPlayClicked()
++ onPauseClicked()
++ onNextClicked()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>530</x>
+      <y>460</y>
+      <w>210</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>UserSettings
+--
+- volume: float
+- repeatMode: string
+- shuffle: boolean
++ save()
++ load()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>340</x>
+      <y>390</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>300</y>
+      <w>170</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>prog
+--
++ main(args:String[])
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>620</x>
+      <y>350</y>
+      <w>30</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>340</y>
+      <w>200</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-
+
+
+</panel_attributes>
+    <additional_attributes>10.0;20.0;180.0;20.0</additional_attributes>
+  </element>
+</diagram>
