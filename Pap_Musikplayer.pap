@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FRAME GUID="2FB25471-B62C-4EE6-BD43-F819C095ACF8" FORMAT="0000" APP_VERSION="2.2.0.8" CHECKSUM="4DCBBAED19B3E1C6">
+  <PROJECT FORMAT="1.00" NAME="Pap_Musikplayer" AUTHOR="weitzjo" CREATED="2025.12.03 08:52:02" MODIFIED="2025.12.03 09:12:27">
+    <DIAGRAMS>
+      <DIAGRAM FORMAT="1.00" ID="0" NAME="Musikplayer" CREATED="2025.12.03 08:52:16" MODIFIED="2025.12.03 09:12:27">
+        <LAYOUT FORMAT="1.00" COLUMNS="3" ROWS="10">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="4">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="57">
+                <TEXT><![CDATA[Playlist]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="8">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="48">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[Musikplayer]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="2">
+              <FIGURE SUBTYPE="PapInput" FORMAT="1.00" ID="62">
+                <TEXT><![CDATA[Suchvorgang]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="3">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="28">
+                <TEXT><![CDATA[Suche]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="4">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="54">
+                <TEXT><![CDATA[Ausgabe zum gesuchten Schlagwort]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="5">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="63">
+                <TEXT><![CDATA[Song/Künstler/Album/G-enre gefunden]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="6">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="59">
+                <TEXT><![CDATA[Song Ausgabe]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="7">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="36">
+                <TEXT><![CDATA[Song Auswählen]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="8">
+              <FIGURE SUBTYPE="PapOutput" FORMAT="1.00" ID="58">
+                <TEXT><![CDATA[Musikaudio wird abgespielt]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="9">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="2">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="32">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="3">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="30">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="7">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="40">
+                <TEXT><![CDATA[wird zur Ausgewählten Playlist Hinzugefügt]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="62" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="55" FROM="54" TO="63" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="62" TO="28" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="37" FROM="36" TO="58" TEXT="abspielen" />
+          <CONNECTION FORMAT="1.00" ID="29" FROM="28" TO="54" TEXT="gefundener Song" />
+          <CONNECTION FORMAT="1.00" ID="31" FROM="28" TO="30" TEXT="nichts gefunden" />
+          <CONNECTION FORMAT="1.00" ID="33" FROM="30" TO="32" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="34" FROM="32" TO="62" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="9" FROM="58" TO="2" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="39" FROM="36" TO="40" TEXT="Playlist Hinzufügen" />
+          <CONNECTION FORMAT="1.00" ID="60" FROM="59" TO="36" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="56" FROM="54" TO="57" TEXT="Playlist mit dem Namen gefunden" />
+          <CONNECTION FORMAT="1.00" ID="50" FROM="48" TO="58" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="45" FROM="57" TO="48" TEXT="Playlist abspielen" />
+          <CONNECTION FORMAT="1.00" ID="64" FROM="63" TO="59" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+    </DIAGRAMS>
+  </PROJECT>
+</FRAME>
