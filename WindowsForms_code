@@ -1,0 +1,91 @@
+using System;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace SimpleMusicPlayer
+{
+    public class Form1 : Form
+    {
+        ListBox playlist;
+        Label lblNowPlaying;
+        ProgressBar progressBar;
+        Button btnPrev, btnPlay, btnNext;
+        TrackBar volumeBar;
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void InitializeComponent()
+        {
+            // Form
+            this.Text = "Music Player";
+            this.Size = new Size(600, 400);
+            this.StartPosition = FormStartPosition.CenterScreen;
+
+            // Playlist
+            playlist = new ListBox();
+            playlist.Location = new Point(10, 10);
+            playlist.Size = new Size(200, 300);
+            playlist.Items.AddRange(new string[]
+            {
+                "Song 1",
+                "Song 2",
+                "Song 3"
+            });
+
+            // Now Playing Label
+            lblNowPlaying = new Label();
+            lblNowPlaying.Text = "Now Playing: -";
+            lblNowPlaying.Location = new Point(230, 20);
+            lblNowPlaying.AutoSize = true;
+
+            // ProgressBar
+            progressBar = new ProgressBar();
+            progressBar.Location = new Point(230, 60);
+            progressBar.Size = new Size(330, 20);
+            progressBar.Value = 30;
+
+            // Buttons
+            btnPrev = new Button();
+            btnPrev.Text = "<<";
+            btnPrev.Location = new Point(230, 100);
+            btnPrev.Size = new Size(60, 30);
+
+            btnPlay = new Button();
+            btnPlay.Text = "Play";
+            btnPlay.Location = new Point(300, 100);
+            btnPlay.Size = new Size(80, 30);
+
+            btnNext = new Button();
+            btnNext.Text = ">>";
+            btnNext.Location = new Point(390, 100);
+            btnNext.Size = new Size(60, 30);
+
+            // Volume
+            volumeBar = new TrackBar();
+            volumeBar.Location = new Point(230, 160);
+            volumeBar.Size = new Size(200, 45);
+            volumeBar.Minimum = 0;
+            volumeBar.Maximum = 100;
+            volumeBar.Value = 50;
+
+            // Controls hinzufügen
+            this.Controls.Add(playlist);
+            this.Controls.Add(lblNowPlaying);
+            this.Controls.Add(progressBar);
+            this.Controls.Add(btnPrev);
+            this.Controls.Add(btnPlay);
+            this.Controls.Add(btnNext);
+            this.Controls.Add(volumeBar);
+        }
+
+        [STAThread]
+        static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.Run(new Form1());
+        }
+    }
+}
