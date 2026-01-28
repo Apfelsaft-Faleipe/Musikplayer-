@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>500</x>
-      <y>80</y>
+      <x>540</x>
+      <y>50</y>
       <w>210</w>
       <h>110</h>
     </coordinates>
@@ -80,7 +80,6 @@
 + onNextClicked()
 + onLastClicked()
 + onVolumeChanged()
-+ onAddSongClicked()
 + onSearchSong()</panel_attributes>
     <additional_attributes/>
   </element>
@@ -139,7 +138,6 @@
 + onNextClicked()
 + onLastClicked()
 + onVolumeChanged()
-+ onAddSongClicked()
 + onSearchSong()</panel_attributes>
     <additional_attributes/>
   </element>
@@ -216,13 +214,13 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>580</x>
-      <y>180</y>
+      <x>620</x>
+      <y>150</y>
       <w>30</w>
-      <h>90</h>
+      <h>120</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
