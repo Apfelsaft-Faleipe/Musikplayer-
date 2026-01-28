@@ -1,0 +1,40 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "H:\\Software\\projektgit\\muso_musikplayer\\Musikplayer-\\Muso_GUI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{44E0017A-7922-4B83-844C-BF593DF60A6C}|Muso_GUI\\Muso_GUI.csproj|h:\\software\\projektgit\\muso_musikplayer\\musikplayer-\\muso_gui\\muso_gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{44E0017A-7922-4B83-844C-BF593DF60A6C}|Muso_GUI\\Muso_GUI.csproj|solutionrelative:muso_gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Entwurf]",
+              "DocumentMoniker": "H:\\Software\\projektgit\\muso_musikplayer\\Musikplayer-\\Muso_GUI\\Muso_GUI\\Form1.cs",
+              "RelativeDocumentMoniker": "Muso_GUI\\Form1.cs",
+              "ToolTip": "H:\\Software\\projektgit\\muso_musikplayer\\Musikplayer-\\Muso_GUI\\Muso_GUI\\Form1.cs [Entwurf]",
+              "RelativeToolTip": "Muso_GUI\\Form1.cs [Entwurf]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T07:47:54.963Z",
+              "EditorCaption": " [Entwurf]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
